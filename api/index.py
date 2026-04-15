@@ -8,7 +8,7 @@ from flask import render_template, Flask
 
 app = Flask(__name__)
 
-conteudo = os.listdir("./file")
+conteudo = os.listdir("api/file")
 
 @app.route('/', defaults={'pages':conteudo})
 @app.route('/home/<user>')
@@ -19,7 +19,7 @@ def home(pages):
 @app.route('/componentes-de-hardware/')
 def componentes_de_hardware():
     list_quest = []
-    with open("./file/Componentes de hardware.csv", newline='', encoding="utf-8") as f:
+    with open("./api/file/Componentes de hardware.csv", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
@@ -28,7 +28,7 @@ def componentes_de_hardware():
 @app.route('/computacao-em-nuvem/')
 def computacao_em_nuvem():
     list_quest = []
-    with open("./file/Computação em Nuvem.csv", newline='', encoding="utf-8") as f:
+    with open("./api/file/Computação em Nuvem.csv", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
@@ -37,7 +37,7 @@ def computacao_em_nuvem():
 @app.route('/fundamentos-de-redes-de-computadores/')
 def fundamentos_de_redes_de_computadores():
     list_quest = []
-    with open("./file/Fundamentos de Redes de Computadores.csv", newline='', encoding="utf-8") as f:
+    with open("./api/file/Fundamentos de Redes de Computadores.csv", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
@@ -46,7 +46,7 @@ def fundamentos_de_redes_de_computadores():
 @app.route('/introducao-a-programacao-de-computadores-com-c/')
 def introducao_a_programacao_de_computadores_com_c():
     list_quest = []
-    with open("./file/Introdução à Programação de Computadores com C.csv", newline='', encoding="utf-8") as f:
+    with open("./api/file/Introdução à Programação de Computadores com C.csv", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
@@ -55,7 +55,7 @@ def introducao_a_programacao_de_computadores_com_c():
 @app.route('/introducao-a-seguranca-da-informacao/')
 def introducao_a_seguranca_da_informacao():
     list_quest = []
-    with open("./file/Introdução à Segurança da Informação.csv", newline='', encoding="utf-8") as f:
+    with open("./api/file/Introdução à Segurança da Informação.csv", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
@@ -64,7 +64,7 @@ def introducao_a_seguranca_da_informacao():
 @app.route('/pensamento-computacional/')
 def pensamento_computacional():
     list_quest = []
-    with open("./file/Pensamento Computacional.csv", newline='', encoding="utf-8") as f:
+    with open("./api/file/Pensamento Computacional.csv", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
