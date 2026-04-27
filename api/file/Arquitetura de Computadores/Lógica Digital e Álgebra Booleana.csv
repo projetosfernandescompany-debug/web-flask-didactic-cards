@@ -1,0 +1,85 @@
+Qual é o nome do sistema matemático que sustenta o desenvolvimento de tecnologias modernas e sistemas computacionais?,Álgebra booleana.
+"Em um computador binário, as operações internas podem ser comparadas ao movimento de peças de qual brinquedo?",Lego.
+Como são chamados os circuitos eletrônicos responsáveis por realizar operações lógicas simples com bits?,Portas lógicas (ou gates).
+Quais são os dois únicos estados possíveis na lógica booleana?,0 e 1.
+"Na analogia do Lego, qual ação lógica corresponde a 'complementar bits'?",Virar uma peça.
+"Na analogia do Lego, qual ação lógica corresponde a 'somar bits'?",Juntar duas peças.
+"Na analogia do Lego, qual ação lógica corresponde a 'mover bits'?",Deslizar uma peça.
+"Na analogia do Lego, qual ação lógica corresponde a 'comparar bits'?",Conferir qual peça é maior.
+"Na lógica digital, o bit 0 é geralmente associado a uma tensão ____.",Baixa.
+"Na lógica digital, o bit 1 é geralmente associado a uma tensão ____.",Alta.
+Qual pesquisador propôs em 1938 o uso da álgebra booleana para resolver problemas de projeto de circuitos?,Claude Shannon.
+De qual instituição de tecnologia Claude Shannon fazia parte quando propôs o uso da lógica booleana?,Instituto de Tecnologia de Massachusetts (MIT).
+A álgebra booleana funciona como uma ferramenta de ____ quando simplifica a função de um circuito digital.,Análise.
+A álgebra booleana funciona como uma ferramenta de ____ quando especifica uma implementação simplificada de uma função.,Projeto.
+Como se chama a tabela que representa todas as possíveis combinações de valores de entrada com seus respectivos resultados?,Tabela-verdade.
+"Na lógica booleana, o valor binário 0 é considerado logicamente ____.",Falso.
+"Na lógica booleana, o valor binário 1 é considerado logicamente ____.",Verdadeiro.
+Qual é a fórmula para determinar o número de linhas de uma tabela-verdade com $n$ variáveis de entrada?,$2^n$.
+"Em uma tabela-verdade de um circuito com 2 entradas, quantas combinações possíveis existem?",4 combinações.
+"Em uma tabela-verdade de um circuito com 3 entradas, quantas combinações possíveis existem?",8 combinações.
+Quais são as três operações básicas da álgebra booleana?,"AND, OR e NOT."
+O sinal $+$ em uma expressão booleana como $X = A + B$ representa qual operação?,Operação OR (OU).
+"Na operação OR de duas entradas, qual é o único caso em que a saída é 0?",Quando ambas as entradas são 0.
+"Na operação OR, se pelo menos uma entrada for 1, qual será o valor da saída?",1 (Verdadeiro).
+O sinal $(\cdot)$ em uma expressão booleana como $X = A \cdot B$ representa qual operação?,Operação AND (E).
+"Na operação AND de duas entradas, qual é o único caso em que a saída é 1?",Quando ambas as entradas são 1.
+"Na operação AND, se qualquer uma das entradas for 0, qual será o valor da saída?",0 (Falso).
+Qual porta lógica realiza a operação de inversão de um sinal?,Porta NOT (NÃO).
+Como é representada a negação da variável $A$ na notação booleana?,$\overline{A}$ (ou $A'$).
+"Se a entrada de uma porta NOT é 0, qual é a saída?",1.
+"Se a entrada de uma porta NOT é 1, qual é a saída?",0.
+Qual elemento gráfico no símbolo de uma porta lógica denota a inversão da saída?,Um pequeno círculo.
+A porta ____ resulta da combinação de uma porta OR seguida de um inversor.,NOR (Não OU).
+Qual é a expressão booleana para a porta NOR com entradas $A$ e $B$?,$X = \overline{A + B}$.
+"Na porta NOR, qual é o único caso em que a saída é 1?",Quando todas as entradas são 0.
+A porta ____ resulta da combinação de uma porta AND seguida de um inversor.,NAND (Não E).
+Qual é a expressão booleana para a porta NAND com entradas $A$ e $B$?,$X = \overline{A \cdot B}$.
+"Na porta NAND, qual é o único caso em que a saída é 0?",Quando todas as entradas são 1.
+O termo XOR é uma abreviação para qual expressão?,Exclusive OR (OU exclusivo).
+Qual é o símbolo matemático utilizado para representar a operação XOR?,$\oplus$.
+"Na porta XOR de duas entradas, qual é a saída quando as entradas são iguais?",0 (Falso).
+"Na porta XOR de duas entradas, qual é a saída quando as entradas são diferentes?",1 (Verdadeiro).
+"Qual porta lógica funciona como um detector de coincidência, dando saída 1 quando as entradas são iguais?",Porta XNOR.
+Qual é o símbolo matemático utilizado para representar a operação XNOR?,$\odot$.
+Qual é a expressão booleana para a porta XNOR com entradas $A$ e $B$?,$X = A \odot B$ (ou $\overline{A \oplus B}$).
+Como são chamadas as representações algébricas que descrevem a lógica de um circuito digital?,Expressões lógicas (ou funções lógicas).
+"Na ordem de precedência dos operadores lógicos, qual deve ser avaliado primeiro?",NOT (Negação).
+"Na ordem de precedência dos operadores lógicos, qual deve ser avaliado por último?",OR (Disjunção).
+"Qual elemento gráfico em uma expressão lógica indica que uma parte deve ser resolvida antes de outras, alterando a precedência padrão?",Parênteses.
+Duas funções lógicas são consideradas ____ se produzirem os mesmos valores de saída para todas as combinações de entrada.,Equivalentes.
+A expressão $X = A \cdot A$ é logicamente equivalente a qual variável simples?,$X = A$.
+"Em um diagrama lógico, se a saída de uma porta AND é conectada à entrada de uma porta OR, qual operação é realizada primeiro?",Operação AND.
+Qual é o resultado de $1 \oplus 0$?,1.
+Qual é o resultado de $1 \oplus 1$?,0.
+Qual é o resultado de $0 \odot 0$?,1.
+Qual é o resultado de $1 \odot 0$?,0.
+"Para o cálculo de $L = A + B + C$ com valores binários, a operação OR deve ser realizada de forma ____.",Bit a bit.
+"Se $A = 1$ e $B = 0$, qual é o valor de $X = A \cdot B$?",0.
+"Se $A = 0110$ e $B = 1101$, qual é o resultado de $A \text{ AND } B$ operado bit a bit?",$0100$.
+"Qual porta lógica pode ser usada para acionar um motor a partir de dois botões, onde o motor liga se APENAS UM botão for pressionado?",Porta XOR.
+"Na porta NAND, se as entradas forem $A=1$ e $B=1$, qual será a saída?",0.
+"Na porta NOR, se as entradas forem $A=1$ e $B=0$, qual será a saída?",0.
+Como se lê a expressão $X = \overline{A}$?,$X$ é igual a NOT $A$ (ou $A$ negado/inverso).
+Qual porta lógica tem saída 1 quando a entrada é 0?,Porta NOT.
+"Qual é a saída de uma porta OR com entradas $0, 0, 1$?",1.
+"Qual é a saída de uma porta AND com entradas $1, 1, 0$?",0.
+A expressão $X = A + B \cdot C$ segue qual ordem de execução sem parênteses?,"Primeiro $B \cdot C$ (AND), depois a soma com $A$ (OR)."
+O que acontece com os valores da tabela-verdade de uma porta OR ao se tornar uma porta NOR?,Todos os valores de saída são invertidos.
+"Em uma porta automática que exige 'Morador' E 'Cartão Ativo', qual porta lógica descreve essa condição?",Porta AND.
+Um alarme que toca se 'Fumaça' OU 'Botão Emergência' for ativado utiliza qual lógica?,Lógica OR.
+Qual é o valor de $\overline{1 \cdot 0}$ na lógica NAND?,1.
+Qual é o valor de $\overline{1 + 1}$ na lógica NOR?,0.
+Quantas variáveis de entrada uma porta NOT pode ter?,Apenas uma.
+A porta NAND é frequentemente chamada de ____.,Universal (por permitir construir outras portas).
+"Na expressão $S = (A \cdot B) + C$, qual operação está dentro dos parênteses?",Operação AND.
+"Se $A = 1$ e $B = 1$, qual é o resultado de $A \oplus B$?",0.
+"Se $A = 0$ e $B = 0$, qual é o resultado de $A \odot B$?",1.
+A porta lógica que produz 1 se o número de entradas em nível alto for ímpar (para 2 entradas) é a ____.,XOR.
+"Qual é o valor de saída de $Y = (\text{NOT } A) \text{ AND } (B \text{ OR } C)$ para $A=0, B=0, C=1$?",1.
+Simplificar um circuito digital usando álgebra booleana ajuda a reduzir o quê?,Custos e complexidade do hardware.
+"Na lógica digital, a condição 'Verdadeiro' é equivalente ao bit ____.",1.
+"Na lógica digital, a condição 'Desligado' é equivalente ao bit ____.",0.
+Um sensor de porta de elevador (fechada=1) e um botão (pressionado=1) acionam o motor via qual porta?,Porta AND.
+A luz interna de um carro (porta aberta=1 ou interruptor=1) é controlada por qual porta lógica?,Porta OR.
+Como é o símbolo da porta AND em comparação à porta OR?,"A porta AND tem um formato reto na entrada, enquanto a OR é curva."

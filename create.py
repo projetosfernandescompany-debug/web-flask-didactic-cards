@@ -17,15 +17,14 @@ def slugify(text):
 
     return text
 
-conteudo = os.listdir("./api/file")
+conteudo = os.listdir("./api/file/Arquitetura de Computadores")
 def ht():
     with open("./api/templates/in.html", "r") as file:
         fil = file.read()
     for x in conteudo:
-        name = x.replace(".csv", "").replace(" ", "-")\
-            .replace("ç", "c").replace("ã", "a").replace("é", "e")\
-                .replace("à", "a").lower()
-        with open(f"./templates/{name}.html", "w") as f:
+        base = x.replace(".csv", "")
+        name = slugify(base)
+        with open(f"./api/templates/arquitetura-de-computadores/{name}.html", "w") as f:
             f.write(fil)
             
             
@@ -36,13 +35,25 @@ def func():
             n = slugify(base)
                 
             #name = n.replace(".csv", "").replace(" ", "-").lower()
-            f.write(f"""@app.route('/{n}/')
+            f.write(f"""@computer_bp.route('/{n}')
 def {n.replace("-", "_")}():
     list_quest = []
-    with open("./api/file/{x}", newline='', encoding="utf-8") as f:
+    with open("./api/file/Arquitetura de Computadores/{x}", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
-    return render_template('{n}.html', quest=list_quest)""" + "\n\n")
+    return render_template('computer-architecture/{n}.html', quest=list_quest)""" + "\n\n")
+
+def func1():
+    content = os.listdir("./api/templates/read")
+    with open(f"./func.txt", "a", encoding="utf-8") as f:
+        for x in content:
+            base = x.replace(".html", "-pdf")
+            n = slugify(base)
+                
+            #name = n.replace(".csv", "").replace(" ", "-").lower()
+            f.write(f"""@read_bp.route('/{n}')
+def {n.replace("-", "_")}():
+    return render_template('read/{n}.html', quest=list_quest)""" + "\n\n")
             
-func()
+func1()

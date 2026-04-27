@@ -1,0 +1,80 @@
+Qual é a menor unidade de representação de dados em um sistema de computação?,O bit.
+Como o computador representa fisicamente os dados eletrônicos?,Sob a forma de voltagem ou corrente elétrica em formato binário (0 e 1).
+Quantos bits formam um byte?,Um conjunto ordenado de 8 bits.
+"Para converter um valor de bits para bytes, qual operação matemática deve ser realizada?",Dividir o valor por 8.
+"Para converter um valor de bytes para bits, qual operação matemática deve ser realizada?",Multiplicar o valor por 8.
+Qual é o resultado da conversão de 512 bits para bytes?,64 bytes.
+O que constitui uma 'palavra' no contexto de unidades de informação?,Um conjunto ordenado de bytes que representa uma informação útil.
+"Na hierarquia de dados, o que é formado por um conjunto organizado de registros?",Um arquivo.
+"Na hierarquia de dados, o que é formado por um conjunto organizado de arquivos?",Um banco de dados.
+Qual é a convenção comum para a abreviação simbólica de bit e byte?,Usa-se 'b' minúsculo para bit e 'B' maiúsculo para byte.
+O prefixo 'K' (quilo) na computação representa qual valor em potência de 10?,$10^3$ (ou 1.000).
+O prefixo 'K' (quilo) na computação representa qual valor exato em potência de 2?,$2^{10}$ (ou 1.024).
+O prefixo 'M' (mega) na computação representa qual valor em potência de 10?,$10^6$ (ou 1.000.000).
+O prefixo 'M' (mega) na computação representa qual valor exato em potência de 2?,$2^{20}$ (ou 1.048.576).
+O prefixo 'G' (giga) representa qual valor em potência de 2?,$2^{30}$ (ou 1.073.741.824).
+O prefixo 'T' (tera) representa qual valor em potência de 2?,$2^{40}$ (ou 1.099.511.627.776).
+Por que os resultados expressos em base decimal para unidades de medida de computador são considerados aproximados?,Porque o computador opera nativamente na base binária (potências de 2).
+"Na regra da seta para conversão de prefixos, o que indica uma seta para a direita?","Um submúltiplo do valor, resultando em um expoente negativo."
+"Na regra da seta para conversão de prefixos, o que indica uma seta para a esquerda?","Um múltiplo do valor, resultando em um expoente positivo."
+Qual é a variação padrão do expoente da base decimal entre dois prefixos vizinhos (ex: Mega para Giga)?,O expoente varia de 3 em 3.
+Qual é a variação padrão do expoente da base binária entre dois prefixos vizinhos (ex: Mega para Giga)?,O expoente varia de 10 em 10.
+Converta 256 bytes em bits.,2.048 bits.
+Quais são as quatro bases de numeração principais abordadas no material?,"Decimal, Binária, Octal e Hexadecimal."
+O que define um sistema de numeração como 'posicional'?,Cada algarismo possui um valor relativo diferente conforme sua posição no número.
+O sistema de numeração romano é um exemplo de sistema _____.,Não posicional.
+O que o número de uma base indica em um sistema posicional?,O total de símbolos diferentes possíveis naquele sistema.
+Quais são os símbolos utilizados na base 16 (hexadecimal)?,Os algarismos de 0 a 9 e as letras de A a F.
+"Em qualquer sistema posicional, como o valor do número cresce em relação às posições?",O valor cresce da direita para a esquerda.
+"No sistema posicional, o que acontece quando a contagem atinge o último algarismo válido de uma posição?",A posição retorna a 0 e a posição à esquerda cresce uma unidade.
+Qual é o valor decimal da letra 'A' no sistema hexadecimal?,10.
+Qual é o valor decimal da letra 'F' no sistema hexadecimal?,15.
+"Na adição em qualquer base, se o resultado da soma de dois algarismos for igual ou maior que a base, o que deve ser feito?",Subtrai-se o valor da base do resultado e passa-se uma unidade ('vai 1') para a esquerda.
+Qual é o resultado da soma binária $1 + 1$?,0 com 'vai 1' para a esquerda (representado como 10).
+"Na subtração de qualquer base, o que ocorre quando o minuendo é menor que o subtraendo?","Deve-se 'pedir 1 emprestado' da posição à esquerda, que vale o valor da base."
+Quanto vale o 'emprestado' em uma subtração no sistema hexadecimal?,16.
+Quanto vale o 'emprestado' em uma subtração no sistema binário?,2.
+"Na subtração binária $0 - 1$, qual é o procedimento?",Pede-se emprestado da esquerda; o 0 torna-se 2 e o resultado é 1.
+O que é a linguagem 'Assembly'?,Uma linguagem similar à de máquina que usa nomes simbólicos para operações e registros.
+Por que as bases octal (8) e hexadecimal (16) são frequentemente usadas na computação?,Porque são múltiplas da base 2 e permitem compactar a visualização de valores binários.
+Como é feita a conversão de um número de uma base $X$ qualquer para a base 10?,Através da soma dos produtos de cada algarismo pela base elevada à sua respectiva posição.
+Qual é o método para converter um número da base 10 para uma base $B$?,Realizar divisões sucessivas do número pela base $B$ e ler os restos de trás para frente.
+"Para converter um número binário para octal, em quantos bits o número deve ser agrupado?","Em grupos de 3 bits, partindo da direita para a esquerda."
+"Para converter um número binário para hexadecimal, em quantos bits o número deve ser agrupado?","Em grupos de 4 bits, partindo da direita para a esquerda."
+Como se realiza a conversão da base 8 diretamente para a base 16?,Converte-se primeiro para a base 2 (binária) e depois agrupa-se em 4 bits para a base 16.
+"Na lógica booleana, quais são os dois únicos valores possíveis?",Verdadeiro e Falso (ou 0 e 1).
+Qual filósofo é o responsável pela criação da lógica booleana?,George Boole (1815-1864).
+"No contexto de representação de dados, o que é uma 'tabela de representação'?",Uma tabela onde cada símbolo corresponde a um grupo de bits exclusivo.
+Quais são os três tipos primitivos de dados mencionados no módulo 4?,"Caractere, Lógico e Numérico."
+O que significa a sigla ASCII?,American Standard Code for Information Interchange.
+Quantos bits são utilizados em cada caractere do padrão ASCII original?,7 bits.
+Quantos caracteres distintos o padrão ASCII pode representar?,128 caracteres ($2^7$).
+"Na tabela ASCII, para que servem os códigos de 0 a $1F$ em hexadecimal?",São caracteres de controle não impressos.
+Por que o padrão Unicode foi criado?,"Para suportar idiomas que o ASCII não abrangia, como japonês, chinês e árabe."
+Quantos bits são utilizados para cada caractere no padrão Unicode mencionado?,16 bits.
+Qual é o total de símbolos possíveis no padrão Unicode de 16 bits?,65.536 símbolos ($2^{16}$).
+"Além de letras e números, o Unicode inclui códigos para quais outros elementos?","Símbolos monetários, matemáticos, formas geométricas e emojis."
+O formato de arquivo MP3 é um exemplo de codificação para qual tipo de dado?,Áudio.
+O formato .png especifica a codificação de quais elementos de uma imagem?,Os pixels.
+"Na conversão binária, o que significa 'ligar' um bit em uma posição?",Atribuir o valor 1 àquela posição para que seu valor relativo seja somado.
+Qual é o valor relativo da 4ª posição (da direita para a esquerda) em um número binário?,8 (correspondente a $2^3$).
+Converta o binário 101 para decimal.,5.
+"No sistema hexadecimal, qual caractere representa o valor decimal 13?",A letra D.
+O valor hexadecimal $20_{16}$ corresponde a qual valor em decimal?,32.
+"Na contagem em base 7, qual número vem imediatamente após o 2456?",2460.
+Por que não existe o algarismo 7 na base 7?,Porque os símbolos de uma base $N$ vão sempre de 0 até $N-1$.
+O que é a 'Unidade Lógica e Aritmética' (ULA) em um processador?,A parte do processador que realiza operações lógicas e matemáticas usando bits.
+Qual é a base numérica padrão utilizada internamente pelos computadores?,Base 2 (binária).
+O que são 'caracteres de controle' na tabela ASCII?,Códigos que comandam ações do dispositivo em vez de imprimir símbolos visíveis.
+A palavra 'SABER' em ASCII resulta em quantos bits no total?,35 bits (5 caracteres $\times$ 7 bits).
+Qual é o prefixo para representar valores Unicode (ex: U+0041)?,U+ seguido do valor em hexadecimal.
+"Se um bit estiver 'desligado' em uma posição binária, qual é o seu valor?",0.
+O valor $1.024$ em decimal equivale a qual potência de 2?,$2^{10}$.
+Qual é a relação entre 1 GB e 1 MB em potências de 10?,1 GB = $10^3$ MB.
+Qual é a relação entre 1 GB e 1 MB em potências de 2?,1 GB = $2^{10}$ MB.
+"No sistema hexadecimal, o que vem após o número $F$?",O número 10.
+"Na base octal, quais são os algarismos permitidos?","0, 1, 2, 3, 4, 5, 6 e 7."
+Como o computador interpreta um arquivo de vídeo?,Como uma longa sequência codificada de 0s e 1s.
+O domínio da representação de dados permite ao profissional atuar em quais áreas além da computação?,"Engenharia, Eletrônica e Telecomunicações."
+Qual é a importância de entender como os circuitos calculam?,Permite compreender a base da infraestrutura computacional e criar protótipos eficientes.
+O que acontece com o valor de um dígito em um sistema posicional conforme ele se move para a esquerda?,Seu valor é multiplicado pelo valor da base.

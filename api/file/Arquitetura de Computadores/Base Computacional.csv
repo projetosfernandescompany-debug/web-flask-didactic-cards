@@ -1,0 +1,65 @@
+"Qual termo se refere ao conjunto de instruções do processador, modos de endereçamento e tamanho da palavra sob a ótica do programador?",Arquitetura de computadores.
+Como é definida a 'implementação de computadores' em relação ao domínio dos sistemas de computação?,"Trata de aspectos tecnológicos internos desnecessários ao programador, como frequência do relógio e sinais de controle."
+Conjuntos de partes coordenadas que concorrem para a realização de um determinado objetivo são chamados de _____.,Sistemas
+Termo: Dados,Definição: Conjunto de fatos em estado bruto a partir dos quais conclusões podem ser tiradas.
+O que diferencia a 'informação' dos 'dados' em um sistema de computação?,A informação é o conhecimento e a inteligência derivados do processamento dos dados.
+Como é chamada a linguagem formada por sequências de bits que representam operações diretamente entendidas pelo hardware?,Linguagem de máquina.
+Qual é a principal característica das linguagens de programação de alto nível?,"Possuem nível de abstração elevado, aproximando-se da linguagem humana."
+O que são mnemônicos no contexto de linguagens de montagem (Assembly)?,Sintaxes que designam as instruções de operações em substituição aos bits.
+Quais são os cinco componentes funcionais básicos de um sistema de computação?,"Dispositivo de entrada, dispositivo de saída, processador, memória principal e memória secundária."
+Qual inovação da Arquitetura de Von Neumann permitiu que máquinas digitais manipulassem programas?,O armazenamento de programas e dados no mesmo espaço de memória.
+Defina a função de um 'barramento' (bus) em um computador.,"Conjunto de fios que transporta sinais de informação, controle e comunicação entre componentes interligados."
+Qual é a principal diferença entre o barramento de dados (BD) e o barramento de endereços (BE)?,"O BD é bidirecional, enquanto o BE é unidirecional."
+Fórmula: Total de pinos do processador,"Cálculo: $Total\_pinos = BD + BE + BC$ (Soma dos barramentos de dados, endereço e controle)."
+"Se um processador endereça no máximo $4$ Mega endereços, qual a largura do barramento de endereços ($L$) em bits?",$22$ bits (pois $4M = 2^2 \times 2^{20} = 2^{22}$).
+O processo de transferir um dado resultante do processamento para um endereço de memória é chamado de operação de _____.,Escrita
+Quais são as duas ações básicas que um processador realiza com uma instrução de máquina?,Interpretar (o que fazer) e Executar (como fazer).
+Diferencie 'conjunto de instruções' de 'ciclo de instruções'.,O conjunto são as instruções possíveis do processador; o ciclo é a organização sequencial para executar um programa.
+Quais são as duas partes fundamentais que constituem o formato básico de uma instrução de máquina?,Código de operação (C.Op.) e Operando(s) (Op.).
+Quais são as três etapas simplificadas do ciclo de instrução representadas pelo acrônimo BDE?,"Buscar (instrução), Decodificar (operação) e Executar (operação)."
+O registrador que armazena o endereço da próxima instrução a ser executada é o _____.,Contador de Instrução (CI) ou Program Counter (PC).
+Qual é a função do Registrador de Instrução (RI) dentro da UCP?,Armazenar a instrução que está sendo executada no momento.
+"Cite os quatro principais níveis da hierarquia de memórias, do topo para a base.","Registradores, Memória Cache, Memória Principal e Memória Secundária."
+Por que o computador utiliza uma hierarquia de memórias em vez de apenas um tipo de memória?,Para compensar a diferença de velocidade entre o processador e a memória principal de forma economicamente viável.
+"O princípio da localidade _____ afirma que, ao acessar um endereço, é provável que o próximo acesso seja ao endereço contíguo seguinte.",Espacial
+O que determina o princípio da localidade temporal?,Um endereço de memória acessado recentemente tem grande probabilidade de ser acessado novamente em curto tempo.
+Qual a principal diferença tecnológica entre a SRAM e a DRAM?,A SRAM usa transístores e é mais rápida; a DRAM usa capacitores e precisa de recarregamento (refresh).
+Como a memória DDR (Double Data Rate) consegue dobrar a taxa de transferência em relação à SDRAM comum?,Transferindo dados tanto na subida quanto na descida do sinal de clock.
+Qual é a função principal do subsistema de Entrada e Saída (E/S)?,Interligar o mundo exterior (periféricos) ao núcleo processador-memória.
+Qual componente serve para compatibilizar as características elétricas e de dados entre o processador e um periférico?,Interface ou controlador.
+A técnica de E/S que permite a transferência de blocos de dados entre memória e periféricos sem intervenção contínua da CPU é o _____.,DMA (Direct Memory Access).
+O que é um 'driver de dispositivo'?,Código de software específico usado pelo sistema operacional para controlar um hardware de E/S.
+Diferencie transmissão paralela de transmissão serial.,A paralela envia um grupo de bits simultaneamente por várias linhas; a serial envia bit a bit por uma única linha.
+"Na estrutura de um disco magnético, como é chamado o conjunto de todas as trilhas na mesma posição relativa em pratos empilhados?",Cilindro.
+Qual é a definição de 'Núcleo' (Kernel) de um sistema operacional?,Conjunto de rotinas que oferece serviços às aplicações e possui acesso completo ao hardware.
+Como o sistema operacional atua como 'gerenciador de recursos'?,"Dirigindo e alocando as partes do hardware (CPU, memória, E/S) entre os diversos programas e usuários."
+Sistemas _____ são aqueles em que os recursos permanecem dedicados exclusivamente à execução de um único programa por vez.,Monoprogramáveis ou monotarefa
+Qual a principal característica de um sistema operacional de tempo compartilhado (time sharing)?,Permitir que múltiplos usuários remotos executem suas tarefas simultaneamente através de fatias de tempo da CPU.
+Sistemas _____ acoplados possuem vários processadores que compartilham uma única memória física gerenciada por um único SO.,Fortemente
+Diferencie virtualização de servidores de contêineres.,A virtualização emula um computador completo com seu próprio SO; contêineres compartilham o kernel do SO hospedeiro.
+Qual é a menor unidade de informação em um sistema de computação?,Bit.
+Quantos bits existem em $1$ byte?,$8$ bits.
+"Para converter um valor de bits para bytes, deve-se _____ o valor por $8$.",Dividir
+"Coloque em ordem crescente de hierarquia: Registro, Arquivo, Banco de Dados, Palavra.","Palavra, Registro, Arquivo, Banco de Dados."
+Qual é o valor exato de $1K$ (quilo) em potência de $2$?,$2^{10}$ ou $1.024$.
+Qual é o valor de $1G$ (giga) em potência de $10$ para representação decimal aproximada?,$10^9$ ($1.000.000.000$).
+O padrão ASCII original associa um número binário de _____ bits a cada caractere.,7
+Qual é a base numérica utilizada pelo hardware do computador para processar dados?,Binária (Base $2$).
+Quais são os símbolos utilizados na base hexadecimal?,"$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E$ e $F$."
+Diferencie sistemas de numeração posicionais de não posicionais.,"Nos posicionais, o valor do algarismo depende de sua posição; nos não posicionais, o valor é fixo (ex: números romanos)."
+"Em sistemas posicionais, o que acontece quando a contagem em uma posição atinge o último algarismo válido?",A posição retorna a $0$ e a posição imediata à esquerda cresce uma unidade ('vai um').
+Como o computador representa imagens digitais no formato PNG?,Como uma sequência de bits ($0$s e $1$s) que especificam os pixels.
+"No processamento de dados, o que é o 'Data Processing'?",Série de atividades ordenadas para produzir informações a partir de dados iniciais.
+O que são sinais de controle e comunicação no barramento de controle?,Pulsos elétricos com duração e intervalos distintos que servem a propósitos específicos de coordenação.
+Qual o propósito da memória cache de nível 1 ($L1$)?,Fornecer dados ao processador na velocidade mais próxima possível de sua operação interna.
+Memórias ROM são classificadas como não _____ pois não perdem dados sem energia.,Voláteis
+Qual tipo de encapsulamento de memória possui contatos independentes nos dois lados do módulo?,DIMM (Dual In Line Memory Module).
+Quais são as duas operações básicas permitidas pela memória RAM?,Leitura (recuperar) e Escrita (armazenar).
+"Na hierarquia de memória, qual nível possui o maior custo por bit e a menor capacidade?",Registradores.
+Sistemas batch processam tarefas _____ a presença interativa do usuário.,Sem
+Qual a principal vantagem de sistemas com múltiplos processadores em termos de 'disponibilidade'?,"Se um processador falha, o sistema continua operando com os demais, embora com menor desempenho."
+O termo 'Cluster' refere-se a quais tipos de sistemas?,Servidores interligados que trabalham de modo transparente ao usuário como um único sistema.
+Qual a função do registrador 'Flags' na CPU?,"Indicar o resultado ou condições especiais de certas instruções (ex: zero, sinal, estouro)."
+"Na conversão de unidades, se a seta de mudança de prefixo aponta para a direita, o expoente da base será _____.",Negativo
+A que valor decimal equivale o dígito 'C' na base hexadecimal?,$12$.
+O que constitui a 'camada lógica' de um computador na visão de máquina de níveis?,O Software (aplicativos e dados).

@@ -1,0 +1,81 @@
+Qual é o significado da sigla CISC no contexto de arquitetura de computadores?,Complex Instruction Set Computer (Computador com Conjunto Complexo de Instruções).
+Qual é o significado da sigla RISC no contexto de arquitetura de computadores?,Reduced Instruction Set Computer (Computador com Conjunto Restrito de Instruções).
+Como são denominados os processadores atuais que combinam características das arquiteturas RISC e CISC?,Arquiteturas híbridas.
+Qual componente do processador é responsável por dar a ordem para a execução de operações primitivas baseadas no conjunto de instruções?,Unidade de Controle.
+A abordagem CISC foca na criação de instruções específicas para o maior número de _____ possível.,funcionalidades
+Por que a Unidade de Controle de um processador CISC é considerada bastante complexa?,Devido à necessidade de decodificar uma extensa quantidade de instruções com diferentes níveis de complexidade.
+"Na arquitetura CISC, a complexidade da Unidade de Controle é compensada por quais fatores?",Poucos acessos à memória e soluções adequadas para problemas específicos.
+Em que década o termo CISC começou a ser utilizado de forma retroativa?,Início da década de 1980 (após a criação do conceito RISC).
+Exemplo de instrução complexa: adicionar uma instrução para multiplicar números reais em vez de realizar repetidas _____.,somas
+"De acordo com a tabela de processadores CISC, qual era o tamanho da instrução do IBM 370 (1970)?",2 a 6 bytes.
+Qual processador CISC de 1978 possuía instruções que podiam variar de 2 a 57 bytes?,VAX11.
+Quantas instruções possuía o processador Intel 8008 (1972)?,49 instruções.
+Qual é a definição do endereçamento do tipo R-R na arquitetura CISC?,Instruções que utilizam registradores tanto para entrada quanto para saída de dados.
+O que caracteriza o endereçamento do tipo R-M?,Um dos elementos (operando ou resultado) é buscado/escrito na memória e ao menos um em registrador.
+O que caracteriza o endereçamento do tipo M-M?,Tanto os operandos quanto o resultado da operação estão localizados na memória principal.
+Qual é o princípio fundamental da abordagem CISC em relação à manipulação de dados?,"Realizar operações complexas buscando operandos na memória, operando na ULA e guardando o resultado na memória."
+Por que o código de máquina em arquiteturas CISC é geralmente mais simples de ser gerado pelo compilador?,Porque existe uma relação direta entre uma linha de código em alto nível e uma única instrução da arquitetura.
+"No processador Intel 386, quantos pulsos de clock leva a instrução ADDI quando operada sobre um endereço de memória?",7 pulsos de clock (7 CLK).
+"No processador Intel 386, quantos pulsos de clock leva a instrução ADDI quando operada sobre um registrador?",2 pulsos de clock (2 CLK).
+Qual é a função do Clock em um processador?,Gerar pulsos em intervalos regulares para organizar e avançar as etapas de execução do circuito.
+"Na analogia da hamburgueria CISC, a 'Busca de Instrução' (BI) equivale a qual tarefa?",Anotar o pedido.
+"Na analogia da hamburgueria CISC, a entrega do pedido no balcão representa qual etapa do processamento?",WriteBack (Escrita de Registrador).
+"Na analogia da hamburgueria CISC, o que representa o 'Acesso à Memória'?",A entrega do pedido em domicílio ou a busca de ingredientes no mercado.
+Qual é a consequência de uma Unidade de Controle complexa (microprograma) no espaço físico do chip CISC?,Limitação do número de registradores disponíveis.
+O que é o pipeline de um processador?,"Uma técnica de implementação que permite a execução de múltiplas instruções simultaneamente em diferentes estágios, como uma linha de montagem."
+Qual microarquitetura da Intel chegou a possuir um pipeline de 31 estágios?,NetBurst (nas versões Prescott e Cedar Mill).
+Quantos estágios de pipeline possui a microarquitetura P5 (Pentium)?,5 estágios.
+Quantos estágios de pipeline possuem as microarquiteturas Sandy Bridge e Core?,14 estágios.
+Por que a Unidade de Controle CISC não pode ser considerada simples?,Porque deve decodificar centenas de instruções variadas e gerar múltiplos sinais de controle para operações complexas.
+"Na arquitetura RISC, as instruções realizam operações apenas sobre _____, com exceção das instruções de acesso à memória.",registradores
+Quais são as únicas instruções na arquitetura RISC que servem para acessar a memória principal?,LOAD e STORE.
+Como a simplicidade da Unidade de Controle na arquitetura RISC beneficia o projeto do processador?,Libera espaço físico no chip para a inclusão de uma quantidade significativamente maior de registradores.
+Qual era a deficiência dos processadores tradicionais (CISC) que a abordagem RISC buscou resolver em relação ao uso de instruções?,Muitas instruções complexas eram pouco utilizadas pelos programas e dependiam de otimização de código de alto nível.
+"Enquanto processadores CISC costumam ter até 8 registradores, processadores RISC frequentemente possuem mais de _____.",32
+Qual é o objetivo de manter a duração das instruções RISC próxima a um ciclo de clock?,Facilitar a previsibilidade e a eficiência do pipeline.
+Quais são os cinco estágios básicos do pipeline RISC mencionados no material?,"BI (Busca), DI (Decodificação), EXE (Execução), AM (Acesso à Memória) e WB (WriteBack)."
+"No exemplo de pipeline RISC, o que indicam os 'quadrados amarelos' na tabela de execução?",A parada do pipeline (stall) para aguardar ciclos de acesso à memória.
+Como a operação 'a = a + 5' (onde 'a' está na memória) é desmembrada na arquitetura RISC?,"Em três etapas: LOAD do valor de 'a', ADDI para somar o valor no registrador, e STORE para guardar o resultado."
+Por que a arquitetura RISC prioriza operações em registradores mesmo que o desmembramento de instruções pareça mais lento no início?,Porque variáveis carregadas em registradores podem ser operadas múltiplas vezes sem novos acessos lentos à memória.
+De quem é o ônus de otimizar o código e converter a linguagem de alto nível para o conjunto reduzido de instruções RISC?,Do compilador.
+"Qual é a característica comum das arquiteturas MIPS, ARM e SPARC em relação ao tamanho da instrução?",Possuem tamanho fixo de instrução (geralmente 4 bytes).
+Qual é o tipo de endereçamento predominante em operações aritméticas RISC?,Registrador-Registrador (R-R).
+"Na analogia da hamburgueria RISC, o que representa a montagem de um lanche completo a partir de pedidos menores?",A tradução de uma operação complexa em várias instruções simples.
+Qual é o fator determinante para que o pipeline RISC opere perto do ideal (1 instrução por ciclo)?,Uma boa otimização do compilador para reduzir acessos à memória e priorizar registradores.
+O que caracteriza um processador híbrido moderno?,"Disponibiliza instruções complexas (estilo CISC), mas utiliza um núcleo interno otimizado com subconjunto reduzido (estilo RISC)."
+Qual é a definição de pipeline 'ideal' para um processador RISC?,Aquele que consegue finalizar a execução de 1 instrução por ciclo de clock.
+A arquitetura RISC permitiu o surgimento de quais tecnologias modernas de baixo consumo e simplicidade?,Smartphones e Internet das Coisas (IoT).
+Qual é a principal diferença entre CISC e RISC quanto à Unidade de Controle?,"CISC possui UC complexa com microprograma; RISC possui UC simples, geralmente hardwired."
+"Em relação ao tempo de execução, como as instruções CISC diferem das RISC?","As instruções CISC têm duração variável (múltiplos clocks), enquanto as RISC buscam duração fixa de 1 clock."
+Qual característica do processador Intel 386 o classifica como CISC na tabela comparativa?,"O tamanho de instrução variável (2 a 16 bytes) e múltiplos tipos de endereçamento (R-R, R-M, M-M)."
+Por que o tamanho fixo da instrução na arquitetura RISC facilita a decodificação?,Porque a Unidade de Controle sempre sabe exatamente quantos bytes ler e onde os campos da instrução estão localizados.
+O termo 'WriteBack' (WB) refere-se a qual ação no processador?,Escrever o resultado da operação de volta no registrador de destino.
+Por que o acesso à memória (AM) é considerado um 'gargalo' no pipeline?,"Porque a memória principal é muito mais lenta que os registradores do processador, exigindo ciclos de espera (clocks extras)."
+Qual é a relação entre a quantidade de instruções e o tamanho da Unidade de Controle?,"Quanto maior e mais variado o conjunto de instruções, maior e mais complexo deve ser o circuito da Unidade de Controle."
+"Na arquitetura RISC, se um programa precisa somar dois valores que já estão em registradores, quantos ciclos de AM (Acesso à Memória) ele utiliza?","Zero ciclos, pois a operação R-R não acessa a memória principal."
+"Segundo a tabela de processadores RISC, qual é a quantidade típica de registradores para a arquitetura SPARC?",32 registradores.
+Qual arquitetura RISC de 1983 é amplamente mencionada como exemplo no material?,ARM/A32.
+O processador Intel 286 (1982) possuía registradores de quantos bits?,16 bits.
+O que define a 'Linguagem de Máquina'?,O conjunto de instruções em binário que um processador específico é capaz de executar diretamente.
+Por que instruções M-M (Memória-Memória) são raras ou inexistentes em RISC?,Porque violam a premissa de que operações devem ocorrer apenas em registradores para manter o pipeline eficiente.
+Qual é o impacto de um pipeline com muitos estágios (ex: 31 estágios) na complexidade do hardware?,Aumenta drasticamente a complexidade da sincronização e o custo de erros de previsão ou dependências.
+Como o conceito de 'instrução primitiva' se relaciona com o projeto do processador?,O projeto do processador é centrado no conjunto dessas operações básicas que ele pode executar nativamente.
+"Na analogia da hamburgueria, o que simboliza a 'receita do sanduíche' na arquitetura CISC?",O microprograma ou a lógica de decodificação da Unidade de Controle.
+"Em uma arquitetura RISC, qual é o principal objetivo da instrução LOAD?",Copiar um dado da memória principal para um registrador interno.
+"Em uma arquitetura RISC, qual é o principal objetivo da instrução STORE?",Copiar o conteúdo de um registrador interno para um endereço na memória principal.
+Verdadeiro ou Falso: Um processador RISC sempre executa programas mais rápido que um CISC.,Falso; o desempenho depende da eficiência do compilador e da natureza das tarefas executadas.
+O que significa dizer que uma instrução é executada em '2 pulsos de clock'?,Significa que o circuito do processador leva dois ciclos completos do relógio interno para concluir todas as etapas daquela instrução.
+Como a abordagem RISC lida com operações complexas como multiplicação?,Geralmente a decompõe em uma sequência de instruções mais simples ou utiliza uma unidade funcional específica para registradores.
+Qual é a principal vantagem de ter muitos registradores (característica RISC)?,"Reduzir a necessidade de acessar a memória RAM, que é lenta, mantendo os dados temporários dentro do processador."
+Por que a abordagem CISC foi a primeira a evoluir naturalmente?,"Porque, nos primórdios, a memória era cara e lenta, então instruções potentes que reduziam o tamanho do código eram vantajosas."
+"Na arquitetura CISC, por que o compilador tem um trabalho 'mais fácil'?",Porque ele pode traduzir comandos de alto nível para instruções de máquina poderosas que já realizam múltiplas etapas.
+Qual é a desvantagem do pipeline longo do Intel Pentium 4 (NetBurst)?,Alta latência e grande perda de desempenho caso o pipeline precise ser esvaziado por erros de desvio.
+As instruções do VAX11 podiam chegar a 57 bytes. Qual é o problema disso para o hardware?,"Dificulta a busca e a decodificação, pois o processador não sabe de antemão onde termina uma instrução e começa a próxima."
+Qual é a unidade funcional que realiza os cálculos matemáticos após a decodificação da instrução?,ULA (Unidade Lógica e Aritmética).
+Por que os smartphones utilizam predominantemente a arquitetura RISC (como ARM)?,"Devido à maior eficiência energética e simplicidade do hardware, ideais para dispositivos móveis."
+O que acontece no estágio de 'Decodificação de Instrução' (DI)?,A Unidade de Controle interpreta o código binário da instrução e identifica quais sinais de controle e operandos são necessários.
+"No contexto de RISC, o termo 'genéricas' aplicado às instruções significa que elas são _____","básicas e versáteis, servindo de blocos de construção para operações complexas."
+O que motivou a mudança de foco para arquiteturas híbridas?,A necessidade de unir a facilidade de programação/compactação do CISC com a velocidade e eficiência de execução do RISC.
+A arquitetura MIPS (1981) utilizava qual tipo de endereçamento?,R-R (Registrador-Registrador).
+Por que a arquitetura CISC favorece o 'espaço de código'?,"Como as instruções fazem muito em pouco espaço (ex: ADD direto na memória), os programas resultantes tendem a ser menores em bytes."
+Qual é a principal característica que define a arquitetura de von Neumann mencionada implicitamente no diagrama inicial?,"A separação ou conexão entre Unidade de Controle, Memória (Dados/Programa) e E/S."

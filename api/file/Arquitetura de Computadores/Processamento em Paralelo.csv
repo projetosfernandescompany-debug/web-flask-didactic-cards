@@ -1,0 +1,80 @@
+Qual é o principal propósito das arquiteturas multiprocessadas em relação às limitações de processadores de núcleo único?,"Superar os limites de eficiência, custo de desenvolvimento e dissipação térmica associados ao aumento da frequência do clock."
+"No contexto da evolução tecnológica, cite três exemplos de aplicações modernas que demandam alta capacidade de processamento em microprocessadores.","Processamento de imagem, renderização tridimensional e modelagem/simulação."
+Qual é o efeito esperado no tempo de conclusão de uma tarefa quando suas ações são distribuídas de forma organizada entre várias pessoas (ou processadores)?,O tempo de conclusão da tarefa será reduzido.
+Defina a técnica de 'Pipeline' no processamento de instruções.,"Divisão do caminho de execução em estágios discretos, permitindo o processamento de várias instruções simultaneamente em diferentes estágios."
+"Em um pipeline ideal de 6 estágios, quantas unidades de tempo são necessárias para concluir 9 instruções?",14 unidades de tempo.
+Qual é a principal característica de uma organização 'Superescalar'?,Capacidade de iniciar e executar instruções comuns de forma independente e concorrente em múltiplos pipelines.
+Diferencie a técnica VLIW da Superescalar quanto à decisão de emissão de instruções.,"A VLIW depende do compilador para determinar a emissão, enquanto a Superescalar requer que o próprio processador tome essa decisão em tempo de execução."
+Como a tecnologia Hyper-Threading (HT) da Intel simula dois processadores a partir de um físico?,Criando dois processadores virtuais (lógicos) que compartilham os recursos do processador físico.
+Qual é o modo de operação de um 'Processador Vetorial'?,"Executa uma única instrução vetorial sobre um conjunto inteiro de dados, processando a mesma operação em cada elemento."
+O que caracteriza um 'Processador Matricial' (ou maciçamente paralelo)?,Possui diversas unidades de processamento que executam a mesma instrução simultaneamente sobre muitos elementos de dados.
+Explique a essência da abordagem Superescalar em termos de ordem de execução.,"Possibilidade de execução independente em pipelines diferentes, inclusive em ordem diversa da definida no programa original."
+O que define a técnica de 'Superpipeline'?,"Execução de múltiplos estágios do pipeline em menos da metade de um ciclo de clock, permitindo dobrar a velocidade interna."
+Em que situação um processador superpipeline perde em desempenho para um superescalar?,No início do programa e a cada ocorrência de alvo de desvio (branch target).
+Qual é a fórmula simplificada para calcular o tempo total de execução de $n$ instruções em um pipeline ideal de $k$ estágios?,Tempo = $k + (n - 1)$ ciclos.
+Por que a maior parte dos usuários percebe o computador como uma máquina sequencial?,Porque a maioria das linguagens de programação exige algoritmos com instruções ordenadas de forma contínua.
+"Na Taxonomia de Flynn, o que significa a sigla SISD?","Single-Instruction-Stream, Single-Data-Stream (Fluxo único de instruções, fluxo único de dados)."
+Quais técnicas podem introduzir paralelismo em computadores classificados como SISD?,"Pipeline, VLIW (palavra de instrução muito longa) e projeto superescalar."
+Por que a arquitetura MISD é considerada apenas teórica?,Pela impossibilidade prática de garantir o acesso de múltiplas unidades de instrução a uma única unidade de dados de forma encadeada.
+Qual categoria da Taxonomia de Flynn engloba processadores vetoriais e matriciais?,"SIMD (Single-Instruction-Stream, Multiple-Data-Stream)."
+Como as arquiteturas SIMD reduzem transferências dispendiosas entre memória e registradores?,Lendo um bloco inteiro de dados por vez em vez de uma palavra individual.
+Defina a categoria MIMD da Taxonomia de Flynn.,Computadores com múltiplos processadores independentes que atuam sobre fluxos de instruções e dados separados.
+Quais são as duas subdivisões principais da classe MIMD?,Sistemas fortemente acoplados e sistemas fracamente acoplados.
+O que define a simetria em um sistema de Multiprocessamento Simétrico (SMP)?,O fato de todos os processadores desempenharem as mesmas funções sob o controle de um sistema operacional integrado.
+Cite os três recursos principais compartilhados pelos processadores em um sistema SMP.,"Memória principal, dispositivos de E/S e o sistema operacional."
+Por que a 'Coerência de Cache' tornou-se um desafio em sistemas multiprocessadores?,"Porque cada processador mantém um cache privado, permitindo caminhos de acesso diferentes e potencialmente conflitantes aos mesmos dados."
+Como funciona o protocolo de 'Escuta de Barramento' (Snooping) em sistemas UMA?,Cada processador monitora o barramento para verificar se uma escrita de outro processador afeta dados presentes em seu próprio cache.
+"Na arquitetura CC-NUMA, qual é a função do 'Nó Nativo'?",É o nó responsável por armazenar e gerenciar a propriedade de um item de dado associado a um endereço específico de memória física.
+O que acontece em um sistema CC-NUMA quando um nó requisita um dado que está 'sujo' em outro cache?,"O nó nativo despacha a requisição para o nó que possui a cópia modificada, que então envia o dado ao requisitante e ao nó nativo."
+Qual é a principal vantagem de designar nós nativos distribuídos no protocolo CC-NUMA?,Aumenta a tolerância a falhas e reduz a contenção de rede ao distribuir a carga de gerência de endereços.
+Diferencie UMA de NUMA quanto ao barramento de memória.,No UMA há um barramento comum compartilhado; no NUMA há barramentos independentes entre módulos de memória e processadores.
+Por que o sistema UMA tende a saturar mais facilmente que o NUMA com o aumento de processadores?,Devido à maior complexidade e contenção no controle de fluxo de comunicação em um barramento único compartilhado.
+O que define fisicamente um processador 'Multicore'?,A combinação de duas ou mais unidades de processamento (núcleos) em uma única pastilha de silício.
+Enuncie a 'Regra de Pollack' sobre o desempenho de processadores.,O aumento de desempenho é diretamente proporcional à raiz quadrada do aumento da complexidade ($\text{Desempenho} \propto \sqrt{\text{Complexidade}}$).
+"Segundo a Regra de Pollack, qual é o ganho de desempenho se a lógica de um núcleo for dobrada?",Aproximadamente 40%.
+Por que os servidores geralmente utilizam de forma eficiente estruturas multicore?,"Porque lidam com numerosas transações em paralelo que são, em grande parte, independentes entre si."
+O que caracteriza 'Aplicações Multithread Nativas'?,Pequeno número de processos que possuem um alto nível de paralelização interna.
+Como a JVM (Java Virtual Machine) interage com sistemas multicore?,A JVM é um processo multithread que gerencia naturalmente o escalonamento de threads das aplicações Java.
+Quais são as três variáveis principais na organização de um chip multicore?,"Número de núcleos, níveis de memória cache e quantidade de cache compartilhada."
+Cite uma vantagem do uso de Cache L2 compartilhada em chips multicore.,Comunicação mais eficiente entre os processadores e facilitação da implementação de coerência de cache.
+Qual processador da Intel é citado como exemplo de uso de caches L1 e L2 dedicadas com uma Cache L3 compartilhada?,Intel Core i7.
+Qual é a relação de escala em um sistema de 4 núcleos com SMT de 4 vias?,O sistema assemelha-se a um processador de 16 núcleos lógicos.
+Como o Hyper-Threading afeta a eficiência de uso da CPU em comparação a um processador escalar simples?,Aumenta a utilização dos recursos de execução de cerca de 50% para mais de 90%.
+Diferencie 'Processador Físico' de 'Processador Lógico' em um contexto de Multiprocessing com Hyper-threading.,O físico é o hardware real no chip; o lógico é a unidade de execução visível ao sistema operacional devido ao multithreading simultâneo.
+Qual foi a principal barreira física que limitou o aumento de desempenho baseado apenas na frequência de clock?,O aumento exponencial do consumo de energia e da produção de calor (dissipação térmica).
+Termo: TLP,Definição: Thread-Level Parallelism (Paralelismo a nível de threads). Exemplo: Execução de múltiplas threads de um servidor web em núcleos distintos.
+Termo: ILP,Definição: Instruction-Level Parallelism (Paralelismo a nível de instrução). Exemplo: Execução de duas operações aritméticas independentes no mesmo ciclo em um processador superescalar.
+Qual é a diferença fundamental entre SMP e Clusters na taxonomia de múltiplos processadores?,SMP é um sistema fortemente acoplado com memória compartilhada; Clusters são sistemas fracamente acoplados com memória distribuída.
+"No diagrama de ciclos de um pipeline de 4 estágios, o que acontece no Ciclo 4 com 9 instruções?","O pipeline está cheio, com as instruções 1, 2, 3 e 4 ocupando os estágios 4, 3, 2 e 1 respectivamente."
+Por que a integração de mais transistores permitiu aumentar o espaço para caches?,"Devido aos avanços na litografia, que permitem colocar mais lógica e memória na mesma área de silício, reduzindo o consumo relativo."
+O que ocorre com a eficiência da CPU em um sistema superescalar comum sem multithreading?,Cerca de metade do tempo do processador permanece sem uso devido a dependências ou latências de instrução.
+Qual é a principal função do barramento ou esquema de conexão em um sistema SMP?,"Permitir a equalização do tempo de resposta de memória para cada processador, garantindo a simetria."
+Processo: Como o nó nativo lida com uma requisição de escrita em CC-NUMA?,"O nó requisitante solicita propriedade exclusiva; após a escrita, o nó nativo notifica outros nós para invalidarem suas cópias."
+Por que sistemas SIMD são ineficientes para tarefas com muitos testes condicionais?,"Porque desvios condicionais quebram o fluxo uniforme, forçando o processador a tratar elementos de dados de forma serializada."
+"Na evolução dos computadores, como a capacidade de um smartphone atual se compara a um mainframe da década de 1970?",O smartphone possui capacidade computacional superior à de um supercomputador (mainframe) daquela época.
+O que é 'Litografia' no contexto de semicondutores mencionado na conclusão?,O processo de fabricação que define as dimensões físicas dos componentes (transistores) no chip.
+A técnica _____ permite que o processador realize trabalho em diversas instruções simultaneamente manipulando muitos elementos de dados de uma só vez.,Pipelines profundos
+"Em um sistema SMP, quem é responsável por fornecer a integração entre os programas e as tarefas nos múltiplos processadores?",O sistema operacional integrado.
+Como a regra de Pollack justifica a mudança para arquiteturas multicore?,Usar vários núcleos simples é mais eficiente (ganho linear de desempenho) do que tentar criar um único núcleo extremamente complexo (ganho sublinear).
+"No contexto de cache, o que significa um item de dado estar 'limpo'?","Significa que nenhuma versão modificada (dirty) do item existe em outros caches, sendo a memória principal a fonte atualizada."
+Qual é a relação entre paralelismo e custo de hardware nas últimas décadas?,A redução do custo de hardware permitiu a implementação de arquiteturas paralelas para ganhar eficiência sem custo proibitivo.
+"Em sistemas MIMD fortemente acoplados, os processadores compartilham a _____.",Memória comum (ou compartilhada)
+Qual é a diferença entre paralelismo em nível de processo e paralelismo em nível de aplicação?,O de processo foca em threads de um único processo; o de aplicação foca na execução de múltiplas instâncias independentes da mesma aplicação.
+Por que o paralelismo melhora a 'disponibilidade' do sistema?,Porque a falha de um único processador em um sistema multiprocessado não interrompe necessariamente todo o sistema.
+O termo _____ refere-se à criação de dois processadores virtuais que dão ao SO a impressão de executar em dois hardwares físicos.,Hyper-Threading
+"Em um processador de 4 estágios, em qual ciclo a nona instrução termina sua execução completa?",No ciclo 12.
+Qual é a vantagem econômica dos processadores multicore mencionada nas considerações finais?,"São viáveis para produção em larga escala por serem confiáveis, estáveis e integráveis com outros componentes."
+Por que a técnica superescalar pode executar instruções em ordem diversa da original?,Para otimizar o uso das unidades funcionais caso existam dependências de dados nas instruções subsequentes.
+"No sistema UMA, a uniformidade de acesso é garantida pelo _____.",Barramento comum compartilhado
+Qual é o impacto do tráfego adicional gerado pela 'escuta de barramento'?,Pode reduzir o desempenho global do barramento compartilhado à medida que o número de processadores aumenta.
+O processador MIPS R4000 é citado como exemplo de qual arquitetura?,Superpipeline.
+As micro-operações de um processador ocorrem de forma _____ ao usuário (transparente).,Invisível
+O que define um sistema MIMD fracamente acoplado?,Processadores que possuem memória local própria e se comunicam através de uma rede (ex: Clusters).
+"No CC-NUMA, o que determina qual nó é o 'nativo' de um endereço?",Geralmente os bits de ordem mais alta do endereço de memória física.
+A técnica de multithreading simultâneo permite explorar tanto o TLP quanto o _____.,ILP (Paralelismo a nível de instrução)
+Como o software pode tirar vantagem do potencial de desempenho quase linear do multicore?,Sendo desenvolvido para decompor tarefas em threads ou processos paralelizáveis.
+Qual componente gerencia o banco de registros de thread único em um núcleo superescalar puro?,A lógica de envio (dispatch logic).
+O paralelismo é obtido quando múltiplas instruções estão em _____ do pipeline no mesmo momento.,Diferentes estágios
+Em que ano Michael J. Flynn propôs sua taxonomia?,1966.
+Qual é a principal desvantagem das arquiteturas de barramento único?,Gargalo de performance (contentions) devido à limitação de largura de banda para múltiplos acessos simultâneos.
+O processador Intel Core Duo utiliza núcleos do tipo _____ puros.,Superescalares
