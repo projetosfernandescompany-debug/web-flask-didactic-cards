@@ -18,11 +18,20 @@ def slugify(text):
     return text
 
 def data_card():
+    conteudo = os.listdir("api/file")
     
-    dados = [{"nome":"Teste", "url_p":"cad/aaaa"},{"nome":"Teste2", "url_p":"cad/bbb"}]
+    dados = []
 
+    for x in conteudo:
+        base = x.strip().replace(".csv", "")
+        url = slugify(base)
+        
+        dados.append({
+            "nome": base,
+            "url_p": f"card/{url}"
+        })
     
-    return dados
+    if dados: return dados
 
 def data_card_computer_architecture():
     conteudo = os.listdir("api/file/Arquitetura de Computadores")
