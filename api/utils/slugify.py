@@ -30,8 +30,8 @@ def data_card():
             "nome": base,
             "url_p": f"card/{url}"
         })
-    print(dados)
-    if dados: return dados
+    
+    return dados
 
 def data_card_computer_architecture():
     conteudo = os.listdir("api/file/Arquitetura de Computadores")
