@@ -18,7 +18,7 @@ def slugify(text):
     return text
 
 def data_card():
-    conteudo = os.listdir("../api/file")
+    conteudo = os.listdir("../file")
     
     dados = []
 
