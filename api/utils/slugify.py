@@ -2,6 +2,7 @@ import unicodedata
 import re
 import os
 
+conteudo = os.listdir("api/file")
 
 def slugify(text):
     text = text.strip()
@@ -18,7 +19,6 @@ def slugify(text):
     return text
 
 def data_card():
-    conteudo = os.listdir("../api/file")
     
     dados = []
 
