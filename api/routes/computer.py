@@ -8,8 +8,10 @@ def arquitetura_cisc_x_risc():
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     DIR = os.path.join(BASE_DIR, "file", "Arquitetura de Computadores")
 
+    FILE_PATH = os.path.join(DIR, "Arquitetura CISC X RISC.csv")
+
     list_quest = []
-    with open(f"{DIR}/Arquitetura CISC X RISC.csv", newline='', encoding="utf-8") as f:
+    with open(FILE_PATH, newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
