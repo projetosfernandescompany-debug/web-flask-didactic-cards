@@ -5,8 +5,11 @@ computer_bp = Blueprint('computer-architecture', __name__)
 
 @computer_bp.route('/arquitetura-cisc-x-risc')
 def arquitetura_cisc_x_risc():
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    DIR = os.path.join(BASE_DIR, "file", "Arquitetura de Computadores")
+
     list_quest = []
-    with open("./api/file/Arquitetura de Computadores/Arquitetura CISC X RISC.csv", newline='', encoding="utf-8") as f:
+    with open(f"{DIR}/Arquitetura CISC X RISC.csv", newline='', encoding="utf-8") as f:
         file = csv.reader(f)
         for row in file:
             list_quest.append(row)
